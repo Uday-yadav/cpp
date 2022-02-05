@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+class Data
+{
+    public:
+    void print(int i)
+    {
+        cout<< "Printing int: " <<i <<endl;
+    }
+    void print(double f)
+    {
+        cout<< "Printing float: " <<f <<endl;
+    }
+    void print(char* c)
+    {
+        cout<< "Printing character: " <<c <<endl;
+    }
+    
+};
+int main(void)
+{
+    Data d;
+    
+    d.print(7.8);
+    
+    d.print(666);
+    
+    d.print("hyy guys");
+    
+    return 0;
+ 
+}
