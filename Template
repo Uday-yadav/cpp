@@ -1,0 +1,29 @@
+#include <iostream>
+
+using namespace std;
+
+template <class T>T sub(T &a, T &b)
+{
+    T result=a-b;
+    return result;
+}
+
+int main()
+{
+    int i,j;
+    double k,l;
+    cout << "value of i:" << endl;
+    cin >> i;
+    cout << "value of j: " << endl;
+    cin >> j;
+    cout << "value of k: " << endl;
+    cin >> k;
+    cout << "value of l: " << endl;
+    cin >> l;
+    
+    cout<<"Substraction of i&j:"<<sub(i,j)<<endl;
+    cout<<"Substraction of k&l:"<<sub(k,l)<<endl;
+    
+    return 0;
+    
+}
