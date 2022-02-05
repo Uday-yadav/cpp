@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+class Area
+{
+    public:
+    int square(int a)
+    {
+        return (a*a);
+    }
+    int rectangle(int a, int b)
+    {
+        return (a*b);
+    }
+        int triangle(int a, int b)
+    {
+        return ((a*b)/2);
+    }
+};
+int main(void)
+{
+    Area A;
+    cout <<A.square(4) <<"\n";
+    cout <<A.rectangle(34,56) <<"\n";
+    cout <<A.triangle(7,8) <<"\n";
+    
+    return 0;
+}
