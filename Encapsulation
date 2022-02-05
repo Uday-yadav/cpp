@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+
+class Employee {
+  private:
+    int password;
+    char username;
+
+
+  public:
+    void setS(int s) {
+      password = s;
+    }
+    int getS() {
+      return password;
+    }
+      public:
+    void setT(char t) {
+      username = t;
+    }
+    int getT() {
+      return username;
+    }
+};
+
+int main() {
+  Employee myObj;
+  int n;
+  char u;
+  cout<<"Username:  ";
+  cin>>u;
+    cout<<"Password:  ";
+  cin>>n;
+  myObj.setS(n);
+  cout << myObj.getS();
+    myObj.setT(n);
+  cout << myObj.getT();
+  return 0;
+}
